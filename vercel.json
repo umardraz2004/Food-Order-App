@@ -16,7 +16,7 @@
   "routes": [
     {
       "src": "/meals",
-      "dest": "/backend/data/meals"
+      "dest": "/backend/app.js"
     }
   ]
 }
