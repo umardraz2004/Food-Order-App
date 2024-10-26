@@ -1,7 +1,7 @@
 import { cartActions } from "./foodSlice";
 
 export const fetchFoodData = () => {
-  const mealsUrl = 'http://localhost:3000/meals';
+  const mealsUrl = 'https://translucent-secret-drink.glitch.me/meals';
   return async (dispatch) => {
     const fetchMeals = async () => {
       const response = await fetch(mealsUrl);
@@ -28,7 +28,7 @@ export const fetchFoodData = () => {
 export const storeData = (cartItems, customerData) => {
   return async (dispatch) => {
     try {
-      const response = await fetch('http://localhost:3000/orders', {
+      const response = await fetch('https://translucent-secret-drink.glitch.me/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
