@@ -13,7 +13,6 @@ const CheckOut = () => {
     if(e.target) {
       const fd = new FormData(e.target);
       const customerData = Object.fromEntries(fd.entries());
-      console.log(customerData);
       dispatch(storeData(cartItems , customerData))
       dispatch(uiActions.changeView('successModal'));
     } else {

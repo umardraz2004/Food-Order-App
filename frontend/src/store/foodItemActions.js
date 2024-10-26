@@ -44,7 +44,7 @@ export const storeData = (cartItems, customerData) => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
-      dispatch(cartActions.submitData(data));
+      dispatch(cartActions.submitOrder(data));
     } catch (err) {
       console.error("Error fetching data:", err);
     }
