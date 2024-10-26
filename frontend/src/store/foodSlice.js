@@ -21,6 +21,7 @@ const foodItem = createSlice({
         },
         setLoading(state, action) {
             state.loading = action.payload;
+            console.log(state.loading);
         },
         addItemToCart(state, action) {
             const newItem = action.payload;
