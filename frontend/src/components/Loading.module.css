@@ -1,0 +1,26 @@
+.loading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    padding: 50px;
+    border-radius: 50%;
+    border: 7px solid #ffab04;
+    border-top-color: transparent ;
+    animation: spin 1s infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: translate(0deg);
+    }
+  }
