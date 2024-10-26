@@ -13,7 +13,6 @@ export const fetchFoodData = () => {
       return data;
     };
     try {
-      dispatch(cartActions.setLoading(true));
       const myData = await fetchMeals();
       dispatch(cartActions.setMeal(myData));
     } catch (err) {

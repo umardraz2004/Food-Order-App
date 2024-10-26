@@ -6,7 +6,7 @@ const initialState = {
     totalQuantity: 0,
     totalCartPrice: 0,
     isCartEmpty: true,
-    loading: false
+    loading: true,
 };
 
 const foodItem = createSlice({
