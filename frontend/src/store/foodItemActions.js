@@ -15,10 +15,11 @@ export const fetchFoodData = () => {
     try {
       dispatch(cartActions.setLoading(true));
       const myData = await fetchMeals();
-      dispatch(cartActions.setLoading(false));
       dispatch(cartActions.setMeal(myData));
     } catch (err) {
       console.error("Error fetching data:", err);
+    } finally {
+      dispatch(cartActions.setLoading(false));
     }
   };
 };
