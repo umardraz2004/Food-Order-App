@@ -40,7 +40,7 @@ const Meals = () => {
           <li key={item.id} className="meal-item">
             <article>
               <img
-                src={`http://localhost:3000/${item.image}`}
+                src={`https://translucent-secret-drink.glitch.me/${item.image}`}
                 alt="Error loading image"
               />
               <h3>{item.name}</h3>
