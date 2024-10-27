@@ -13,7 +13,7 @@
     border-radius: 50%;
     border: 7px solid #ffab04;
     border-top-color: transparent ;
-    animation: spin 1s infinite;
+    animation: spin 1s linear infinite;
   }
   
   @keyframes spin {
