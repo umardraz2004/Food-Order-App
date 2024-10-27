@@ -7,9 +7,9 @@ import { Toaster, toast } from "react-hot-toast";
 import classes from './Loading.module.css'
 
 const Meals = () => {
+  const loading = useSelector((state) => state.meals.loading);
   const foodItems = useSelector((state) => state.meals.items);
   const cartItems = useSelector((state) => state.meals.cartItems);
-  const loading = useSelector((state) => state.meals.loading);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchFoodData());
