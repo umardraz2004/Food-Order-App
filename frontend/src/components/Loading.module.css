@@ -21,6 +21,6 @@
       transform: rotate(360deg);
     }
     to {
-      transform: translate(0deg);
+      transform: rotate(0deg);
     }
   }
