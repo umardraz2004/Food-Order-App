@@ -7,7 +7,6 @@ const CartInfo = () => {
   const cartItems = useSelector((state) => state.meals.cartItems);
   const totalCartPrice = useSelector((state) => state.meals.totalCartPrice);
   const isCartEmpty = useSelector((state) => state.meals.isCartEmpty);
-  console.log(cartItems.length);
 
   const dispatch = useDispatch();
   const changeCurrentRendering = () => {

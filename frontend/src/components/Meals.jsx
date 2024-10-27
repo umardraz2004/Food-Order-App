@@ -31,7 +31,7 @@ const Meals = () => {
       return;
     }
   };
-  console.log(foodItems);
+  
   return (
     <>
       {loading ? (
