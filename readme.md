@@ -25,11 +25,15 @@ A simple food order application built with React.js, providing a smooth shopping
 
 2. **Install Dependencies**:
     ```bash
+    cd frontend
+    npm install
+    cd backend
     npm install
     ```
 
 3. **Run the App**:
     ```bash
+    cs front
     npm start
     ```
 
@@ -38,7 +42,6 @@ The app should now be running on `http://localhost:3000`.
 ## Project Structure
 
 - `src/components`: Contains all components, including Product Display, Cart, and Checkout Modal.
-- `src/App.js`: Main app logic.
 - `src/styles`: Styling for the app.
 
 ## Future Enhancements
