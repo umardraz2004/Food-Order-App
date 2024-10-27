@@ -35,7 +35,7 @@ const Meals = () => {
   return (
     <>
       {loading ? (
-        <p className={classes.loading}>
+        <p className={classes.loading-spinner}>
           <div className={classes.spinner}></div>
         </p>
       ) : (
