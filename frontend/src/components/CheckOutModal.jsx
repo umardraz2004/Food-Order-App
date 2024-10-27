@@ -5,25 +5,25 @@ import { formatter } from "../utils/Formatter";
 import { storeData } from "../store/foodItemActions";
 
 const CheckOut = () => {
-  const cartItems = useSelector(state => state.meals.cartItems);
-  const totalCartPrice = useSelector(state => state.meals.totalCartPrice);
+  const cartItems = useSelector((state) => state.meals.cartItems);
+  const totalCartPrice = useSelector((state) => state.meals.totalCartPrice);
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(e.target) {
+    if (e.target) {
       const fd = new FormData(e.target);
       const customerData = Object.fromEntries(fd.entries());
-      dispatch(storeData(cartItems , customerData))
-      dispatch(uiActions.changeView('successModal'));
+      dispatch(storeData(cartItems, customerData));
+      dispatch(uiActions.changeView("successModal"));
     } else {
-      console.log('add in form')
+      console.log("add in form");
     }
-  }
+  };
   const handleCloseModal = () => {
     setTimeout(() => {
-        dispatch(uiActions.changeView('cartInfoModal'));
-    }, 10)
-};
+      dispatch(uiActions.changeView("cartInfoModal"));
+    }, 10);
+  };
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -54,7 +54,9 @@ const CheckOut = () => {
           </div>
         </div>
         <div className="modal-actions">
-          <button className="text-button" onClick={handleCloseModal}>Close</button>
+          <button className="text-button" onClick={handleCloseModal}>
+            Close
+          </button>
           <button className="button">Submit Order</button>
         </div>
       </form>

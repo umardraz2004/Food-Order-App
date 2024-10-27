@@ -42,7 +42,7 @@ const CartInfo = () => {
           )}
         </ul>
       </div>
-      <div className="cart-total">{formatter.format(totalCartPrice)}</div>
+      <div className="cart-total">{formatter.format(Math.abs(totalCartPrice))}</div>
       <form method="dialog" className="modal-actions">
         <button className="text-button">Close</button>
         <button className="button" onClick={changeCurrentRendering}>

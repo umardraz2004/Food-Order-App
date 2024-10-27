@@ -4,7 +4,7 @@ import { fetchFoodData } from "../store/foodItemActions";
 import { formatter } from "../utils/Formatter";
 import { cartActions } from "../store/foodSlice";
 import { Toaster, toast } from "react-hot-toast";
-import classes from './Loading.module.css'
+import classes from "./Loading.module.css";
 
 const Meals = () => {
   const loading = useSelector((state) => state.meals.loading);
