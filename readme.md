@@ -4,7 +4,7 @@ A full-stack food ordering application built with React.js and Express.js, featu
 
 ## 📸 Project Showcase
 
-| Home Page | Cart Page | Checkout Page | Dashboard |
+| Home Page | Cart Model | Checkout Model | Success Model |
 |-----------|------------|-------------------|-----------|
 | ![Home](./screenshots/home.png) | ![Cart](./screenshots/cart.png) | ![checkout](./screenshots/checkout.png) | ![success](./screenshots/success.png) |
 
