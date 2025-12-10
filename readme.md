@@ -2,6 +2,14 @@
 
 A full-stack food ordering application built with React.js and Express.js, featuring a modern UI with Redux state management, real-time cart updates, and a complete checkout flow. This project demonstrates essential e-commerce functionalities with a restaurant food ordering system.
 
+## 📸 Project Showcase
+
+| Home Page | Cart Page | Checkout Page | Dashboard |
+|-----------|------------|-------------------|-----------|
+| ![Home](./screenshots/home.png) | ![Cart](./screenshots/cart.png) | ![checkout](./screenshots/checkout.png) | ![success](./screenshots/success.png) |
+
+---
+
 ## ✨ Features
 
 - **🍕 Browse Menu**: Display of 20 delicious food items with images, descriptions, and prices
@@ -194,35 +202,4 @@ Backend allows all origins with:
 - React plugin enabled
 - Fast HMR (Hot Module Replacement)
 - Optimized production builds
-
-## 📦 Dependencies Overview
-
-### Frontend Core
-- `react` & `react-dom` - UI rendering
-- `@reduxjs/toolkit` - State management
-- `react-redux` - React-Redux bindings
-- `react-hot-toast` - Toast notifications
-- `vite` - Build tool
-
-### Backend Core
-- `express` - Web server
-- `body-parser` - JSON parsing
-- `fs/promises` - File operations
-
-## 🐛 Troubleshooting
-
-### Server not responding
-- Ensure backend is running on port 3000
-- Check CORS headers are properly set
-- Verify `app.listen()` callback shows "Server is running"
-
-### CORS errors
-- CORS middleware must be first in middleware chain
-- OPTIONS requests handled before other middleware
-- Check frontend API URLs point to `http://localhost:3000`
-
-### Images not loading
-- Verify images exist in `/backend/public/images/`
-- Check image paths in `available-meals.json`
-- Ensure Express static middleware is configured
-
+---
