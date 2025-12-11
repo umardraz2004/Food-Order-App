@@ -12,7 +12,7 @@ A full-stack food ordering application built with React.js and Express.js, featu
 
 ## ✨ Features
 
-- **🍕 Browse Menu**: Display of 20 delicious food items with images, descriptions, and prices
+- **🍕 Food Menu**: Display of 20 delicious food items with images, descriptions, and prices
 - **🛒 Shopping Cart**: Add items to cart with real-time quantity updates
 - **➕➖ Cart Management**: Increase/decrease quantities or remove items from cart
 - **💰 Live Price Calculation**: Dynamic total price updates using USD currency formatting
